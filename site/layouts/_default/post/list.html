@@ -10,8 +10,7 @@
     <!-- Ranges through content/**/*.md -->
     {{ range .Pages }}
         <div class="post-list">
-            <a href="{{.Permalink}}">{{.Title}}</a>
-            <img class="img" src="{{ .Params.thumbnail }}" alt="">
+            <a href="{{.Permalink}}">{{.Title}} | MANE</a>
         </div>
     {{ end }}
 </main>
