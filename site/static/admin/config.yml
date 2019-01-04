@@ -32,5 +32,5 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Feature Image", name: "thumbnail", widget: "image"}
-      - {label: "Event Details", name: "details", widget: "markdown"}
+      - {label: "Event Details", name: "body", widget: "markdown"}
       - {label: "Event Date", name: "date", widget: "datetime"}
