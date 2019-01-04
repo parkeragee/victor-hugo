@@ -6,4 +6,10 @@
 
 <a href="{{ "/tech" | relURL }}">Check out the tech</a>
 
+{{ with .Site.GetPage "/post" }}
+    {{ range .Pages }}
+        {{ .Title }}
+    {{ end }}
+{{ end }}
+
 {{ end }}
