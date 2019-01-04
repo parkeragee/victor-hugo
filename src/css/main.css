@@ -30,3 +30,7 @@ a {
 .content {
   padding: 0 32px;
 }
+
+img {
+  max-width: 100%;
+}

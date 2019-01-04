@@ -6,9 +6,12 @@
 
 <a href="{{ "/tech" | relURL }}">Check out the tech</a>
 
-{{ with .Site.GetPage "/post" }}
+{{ with .Site.GetPage "/events" }}
     {{ range .Pages }}
-        {{ .Title }}
+        <div>
+            {{ .Title }}
+            <img class="home" src='{{ .Param "thumbnail" }}' alt="{{ .Title }}">
+        </div>
     {{ end }}
 {{ end }}
 
